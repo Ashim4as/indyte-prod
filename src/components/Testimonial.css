@@ -1,0 +1,134 @@
+/* General section styling */
+.ltn__testimonial-area {
+    background-color: #f8f9fa; /* Light gray background to match the reference */
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Left column styling */
+.testimonial-text-left {
+    padding-right: 30px; /* Spacing between columns */
+}
+
+.testimonial-item {
+    background-color: #fff; /* White background for text boxes */
+    border-radius: 8px; /* Subtle rounded corners */
+    padding: 20px; /* Padding for content */
+    margin-bottom: 20px; /* Spacing between items */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #e9ecef; /* Light gray border */
+}
+
+.testimonial-item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Right column styling (image) */
+.testimonial-image img {
+    width: 90%; /* Increase image size */
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the image */
+    float: right; /* Aligns image to the right */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.testimonial-image img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Right text blocks styling */
+.right-text {
+    background-color: #e9f2ff; /* Light blue background to match the reference */
+    border: 1px solid #e9ecef; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 20px; /* Spacing between items */
+    width: 80%; /* Matches the width of the image */
+    align-self: flex-end; /* Aligns text blocks to the right */
+}
+
+.right-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.right-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Right column styling */
+.testimonial-text-right {
+    padding-left: 30px; /* Spacing between columns */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .testimonial-text-left {
+        padding-right: 15px; /* Reduce spacing on medium screens */
+    }
+
+    .testimonial-item, .right-text {
+        padding: 15px; /* Reduced padding on medium screens */
+    }
+
+    .testimonial-image img {
+        width: 80%; /* Slightly smaller image on medium screens */
+    }
+
+    .right-text {
+        width: 70%; /* Adjust text block width */
+    }
+
+    .testimonial-text-right {
+        padding-left: 15px; /* Reduce spacing on medium screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .row.align-items-center {
+        flex-direction: column; /* Stack columns on mobile */
+    }
+
+    .col-lg-6 {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .testimonial-text-left, .testimonial-image {
+        padding: 0; /* Remove padding on mobile */
+        align-items: center; /* Center content on mobile */
+    }
+
+    .testimonial-item, .right-text {
+        margin-left: 15px;
+        margin-right: 15px; /* Add margin for spacing on mobile */
+        width: 100%; /* Full width on mobile */
+    }
+
+    .testimonial-image img {
+        width: 70%; /* Smaller image on mobile */
+        float: none; /* Remove float on mobile */
+        margin: 0 auto 20px; /* Center the image and add spacing below */
+        position: static; /* Remove fixed position on mobile */
+    }
+
+    .testimonial-text-right, .testimonial-image {
+        padding: 0; /* Remove padding on mobile */
+        align-items: center; /* Center content on mobile */
+    }
+}

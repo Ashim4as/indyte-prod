@@ -1,0 +1,118 @@
+/* General slider area styling */
+.ltn__img-slider-area {
+    background-color: #f8f9fa; /* Light gray background to match the reference */
+    padding: 20px 0; /* Minimal padding for the slider area */
+}
+
+/* Slider container styling */
+.ltn__image-slider-4-active {
+    position: relative; /* For positioning arrows and content */
+}
+
+/* Slide item styling */
+.ltn__img-slide-item-4 {
+    position: relative;
+    overflow: hidden; /* Ensures content stays within bounds */
+    background-color: #fff; /* White background for slides */
+    border-radius: 8px; /* Subtle rounded corners */
+    margin: 0 10px; /* Spacing between slides */
+    padding: 10px;
+    width: 50%; /* Adjust width to 50% */
+    margin: 0 auto; /* Center the slide item */
+}
+
+.ltn__img-slide-item-4:hover {
+    transform: none; /* Remove hover transformation */
+    box-shadow: none; /* Remove hover shadow */
+}
+
+/* Image styling within slides */
+.ltn__img-slide-item-4 img {
+    width: 50%; /* Adjust width to 50% */
+    height: auto;
+    object-fit: cover; /* Ensures images fill the slide while maintaining aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin: 0 auto; /* Center the image */
+}
+
+/* Slider navigation arrows */
+.ltn__image-slider-4-active .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ltn__image-slider-4-active .slick-arrow:hover {
+    background-color: #ff5e14; /* Orange on hover */
+    transform: translateY(-50%) scale(1.1); /* Slight zoom on hover */
+}
+
+.ltn__image-slider-4-active .slick-prev {
+    left: 20px;
+}
+
+.ltn__image-slider-4-active .slick-next {
+    right: 20px;
+}
+
+.ltn__image-slider-4-active .slick-arrow::before {
+    content: '\f104'; /* Left arrow Unicode for Font Awesome or similar */
+    font-family: "Font Awesome 5 Free"; /* Assuming Font Awesome is used */
+    font-weight: 900;
+    color: #333;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.ltn__image-slider-4-active .slick-next::before {
+    content: '\f105'; /* Right arrow Unicode for Font Awesome or similar */
+}
+
+.ltn__image-slider-4-active .slick-arrow:hover::before {
+    color: #fff; /* White arrow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .ltn__img-slide-item-4 {
+        margin: 0 5px; /* Reduce spacing between slides on medium screens */
+    }
+
+    .ltn__image-slider-4-active .slick-arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ltn__image-slider-4-active .slick-arrow::before {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ltn__img-slide-item-4 {
+        margin: 0 2px; /* Minimal spacing on mobile */
+    }
+
+    .ltn__image-slider-4-active .slick-arrow {
+        display: none; /* Hide arrows on mobile if space is limited */
+    }
+}
+
+/* Section title styling */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}

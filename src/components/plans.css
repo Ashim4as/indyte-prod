@@ -1,0 +1,137 @@
+/* General section styling */
+.ltn__feature-area {
+    background-color: #f8f9fa; /* Light gray background from the reference image */
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/* Section title styling (consistent with the reference) */
+.section-subtitle {
+    font-size: 16px;
+    color: #6f42c1; /* Purple secondary color */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #e9d8fd; /* Light purple background for the subtitle */
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Feature item (card) styling */
+.ltn__feature-item-6 {
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px; /* Subtle rounded corners from the reference */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    padding: 20px; /* Padding for content */
+    margin-bottom: 30px; /* Spacing between cards */
+    border: 1px solid #e9ecef; /* Light gray border to match the reference */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow: hidden; /* Ensure the image stays within the box */
+    position: relative; /* For positioning the image */
+}
+
+.ltn__feature-item-6:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    color: #6f42c1; /* Change text color to purple on hover */
+}
+
+.ltn__feature-item-6.active {
+    border-color: #6610f2; /* Indigo border for the active card */
+}
+
+/* Icon styling */
+.ltn__feature-icon span i {
+    font-size: 40px; /* Larger icon size to match the reference */
+    color: #6610f2; /* Indigo color for icons */
+    margin-bottom: 20px; /* Space below icon */
+    display: block; /* Ensures icon centers properly */
+}
+
+/* Image styling */
+.ltn__feature-icon img {
+    width: 100%;
+    height: 100%; /* Cover the whole box */
+    border-radius: 8px; /* Match the card's border radius */
+    margin-bottom: 0; /* Remove space below the image */
+    object-fit: cover; /* Ensure the image covers the box */
+    transition: transform 0.3s ease; /* Smooth zoom-in effect */
+    position: absolute; /* Position the image absolutely */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Behind the text */
+}
+
+.ltn__feature-item-6:hover .ltn__feature-icon img {
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+/* Feature info (title and description) styling */
+.ltn__feature-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.ltn__feature-info h4 a {
+    color: #333;
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.ltn__feature-info h4 a:hover {
+    color: #6f42c1; /* Purple on hover for links */
+}
+
+.ltn__feature-info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0; /* Removes default paragraph margin */
+}
+
+.ltn__feature-item-6:hover .ltn__feature-info h4 a {
+    color: #6610f2; /* Change link color to indigo on hover */
+}
+
+.ltn__feature-item-6:hover .ltn__feature-info p {
+    color: #6f42c1; /* Change paragraph text color to purple on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .ltn__feature-item-6 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 28px; /* Smaller title on mobile */
+    }
+
+    .ltn__feature-icon span i {
+        font-size: 30px; /* Smaller icons on mobile */
+    }
+
+    .ltn__feature-item-6 {
+        padding: 15px; /* Reduced padding on mobile */
+    }
+}

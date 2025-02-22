@@ -1,0 +1,127 @@
+/* AboutUs.css */
+
+.ltn__about-us-area {
+    padding-top: 115px;
+    padding-bottom: 100px;
+    background-color: #f5f7fa; /* Light blue background as seen in the image */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+
+.about-us-img-wrap {
+    position: relative;
+}
+
+.about-us-img-wrap img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add transition for zoom effect */
+}
+
+.about-us-img-wrap img:hover {
+    transform: scale(1.05); /* Zoom in effect on hover */
+}
+
+.about-us-info-wrap {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title-area {
+    margin-bottom: 30px;
+}
+
+.section-subtitle {
+    color: #007bff; /* Change to website theme color */
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.about-us-info-wrap p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.ltn__feature-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Add transition for glowing effect */
+}
+
+.ltn__feature-item:hover {
+    box-shadow: 0 0 15px rgba(75, 0, 130, 0.5), 0 0 25px rgba(138, 43, 226, 0.5); /* Glowing effect with indigo and purple colors */
+}
+
+.ltn__feature-icon {
+    margin-right: 15px;
+}
+
+.ltn__feature-icon span {
+    display: none; /* Remove the orange circles */
+}
+
+.ltn__feature-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.ltn__feature-info p {
+    font-size: 14px;
+    color: #666666;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about-us-img-wrap img {
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,145 @@
+/* General section styling */
+.ltn__category-area {
+    background-color: #f8f9fa; /* Light gray background from the reference image */
+    padding-top: 115px;
+    padding-bottom: 70px;
+}
+
+/* Section title styling (consistent with the AboutUs styling) */
+.section-subtitle {
+    font-size: 16px;
+    color: linear-gradient(45deg, indigo, purple); /* Indigo and purple gradient */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Category item (card) styling */
+.ltn__category-item-5 {
+    background-color: #fff; /* White background for cards */
+    border-radius: 10px; /* Rounded corners from the reference */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    padding: 20px; /* Padding for content */
+    margin-bottom: 30px; /* Spacing between cards */
+    position: relative; /* For positioning the image */
+    overflow: hidden; /* To hide the overflow of the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    height: 300px; /* Reduced height for a more box-like appearance */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ltn__category-item-5:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Image styling */
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Cover the whole box */
+    opacity: 0.6; /* 60% opacity */
+    object-fit: cover;
+    z-index: -1; /* Behind the text */
+    transition: transform 0.3s ease; /* Smooth zoom-in effect */
+}
+
+.ltn__category-item-5:hover .card-image {
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+/* Icon styling */
+.category-icon i {
+    font-size: 40px; /* Larger icon size to match the reference */
+    color: linear-gradient(45deg, indigo, purple); /* Indigo and purple gradient */
+    display: block; /* Ensures icon centers properly */
+    margin-bottom: 15px; /* Space below icon */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for glow effect */
+}
+
+.category-icon i:hover {
+    text-shadow: 0 0 10px indigo, 0 0 20px purple, 0 0 30px purple; /* Glowing effect */
+}
+
+/* Category number styling */
+.category-number {
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(45deg, indigo, purple); /* Indigo and purple gradient */
+    padding: 5px 12px;
+    border-radius: 20px; /* Rounded number badge */
+    display: inline-block;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for glow effect */
+}
+
+.category-number:hover {
+    box-shadow: 0 0 10px indigo, 0 0 20px purple, 0 0 30px purple; /* Glowing effect */
+}
+
+/* Category title styling */
+.category-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    display: block; /* Ensures title is a block for spacing */
+}
+
+/* Category brief (description) styling */
+.category-brief {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    display: block; /* Ensures brief is a block for spacing */
+}
+
+/* Link styling (for the hidden category-btn, in case it's shown later) */
+.ltn__category-item-5 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.ltn__category-item-5 a:hover {
+    color: linear-gradient(45deg, indigo, purple); /* Indigo and purple gradient on hover for links */
+}
+
+/* Slider and responsiveness adjustments */
+.ltn__category-slider-active--- .slick-arrow {
+    display: none !important; /* Hide default arrows if not needed, adjust based on slider config */
+}
+
+/* Ensure cards are centered and responsive */
+@media (max-width: 991px) {
+    .ltn__category-item-5 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 28px; /* Smaller title on mobile */
+    }
+
+    .ltn__category-item-5 {
+        padding: 15px; /* Reduced padding on mobile */
+    }
+
+    .category-icon i {
+        font-size: 30px; /* Smaller icons on mobile */
+    }
+}
